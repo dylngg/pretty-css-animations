@@ -1,7 +1,7 @@
 .background {
   width: 100%;
   height: 100%;
-  background-color: #eaeaea;
+  background-color: #f7f7f7;
   position: absolute;
 }
 
@@ -26,43 +26,17 @@
 }
 
 .nav-container {
-  width: 333px;
+  width: inherit;
   height: 428px;
 }
 
 .nav-faux-menu {
   position: absolute;
-  width: 333px;
+  width: inherit;
   height: 75px;
   background-color: gray;
   z-index: 2;
 }
-/*
-.nav-button-main {
-  display: block;
-  position: absolute;
-  pointer-events: all;
-  cursor: default;
-  
-*/
-  /*Changes in the animation*/
-/*
-  margin-left: 7.5%;
-  margin-top: 17.5px;
-  height: 40px;
-  width: 40px;
-  border-radius: 40px;
-  
-*/
-  /*Nav Button Styles*/
-/*
-  background-color: gray;
-  background-image: url(../images/menu.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 5;
-}
-*/
 
 /*HTML Tag link trick that makes the nav open*/
 
@@ -114,9 +88,6 @@ input[type=checkbox]:checked ~ .nav-main-container {
 input[type=checkbox]:checked ~ .nav-button {
   background-image: url(../images/close-menu.svg);
 }
-input[type=checkbox]:checked ~ .menu {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2),0 -1px 0px rgba(0,0,0,0.02);
-}
 
 .nav-button {
   display: block;
@@ -152,7 +123,7 @@ input[type=checkbox]:checked ~ .menu {
 .menu-image {
   position: fixed;
   height: 200px;
-  width: 333px;
+  width: inherit;
   background-image: url(../images/menu-image-default.png);
   background-size: cover;
   background-position: bottom;
@@ -203,7 +174,7 @@ input[type=checkbox]:checked ~ .menu {
   position: fixed;
   background-color: #eaeaea;
   height: 50px;
-  width: 333px;
+  width: inherit;
   margin-top: 378px;
   margin-left: 0;
 }
@@ -226,7 +197,7 @@ input[type=checkbox] {
   background-color: white;
   opacity: 0;
   height: 428px;
-  width: 333px;
+  width: inherit;
   pointer-events: all;
   z-index: 5;
   position: absolute;
@@ -242,7 +213,7 @@ input[type=checkbox] {
   display: block;
   background-color: white;
   opacity: .1;
-  width: 333px;
+  width: inherit;
   height: 428px;
   top: 0;
   left: 0;
