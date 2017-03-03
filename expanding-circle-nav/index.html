@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tungsten.css</title>
+    <title>Expanding Circle Nav Example</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet"> 
   
     <link rel="stylesheet" href="css/normalize.css">
@@ -14,37 +14,32 @@
   <body>
     <!-- Primary Page Layout -->
     <div class="full-container background">
-      <section class="hidden-tracker" id=" "></section>
       <section class="menu row">
+        <div class="nav-faux-menu"></div>
         <div class="nav-container">
-          <a class="nav-button-main" id="nav" href="#nav">
-            <div class="main"></div>
-          </a>
-          <div class="nav-faux-menu"></div>
-          <a class="nav-button-close" href="# "></a>
-        </div>
-<!--
-        <div class="nav-box u-pull-left column">
-          <div class="menu-button"></div>
-          <div class="menu-image"></div>
-          <div class="menu-content">
-            <ul class="menu-list">
-              <li class="menu-link">
-                <span class="list-image"></span>
-                <a href="https://github.com/dylngg">Github</a>
-              </li>
-            </ul>
+          <input type="checkbox" id="toggle">
+          <label class="nav-button" for="toggle"></label>
+<!--            for="toggle"-->
+            <div class="nav-main"></div>
+            <div class="nav-main-container">
+              <div class="menu-image"></div>
+              <div class="menu-content">
+                <ul class="menu-list">
+                  <li class="menu-link">
+                    <span class="list-image"></span>
+                    <a href="https://github.com/dylngg/pretty-css-animations/tree/master/expanding-circle-nav">Github</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-info">
+                <span>Info: 29.9 KB, updated 2/19/17</span>
+              </div>
+            </div>
           </div>
-          <div class="menu-info">
-            <span>Info: 29.9 KB, updated 2/19/17</span>
-          </div>
-        </div>
--->
       </section>
       <section class="main row">
         <div class="twelve columns">
           <h3 class="main-title">Pure CSS Expanding Nav Circle Animation</h3>
-          <a href="http://dylangardner.org">Wow</a>
         </div>
       </section>
     </div>
