@@ -1,0 +1,300 @@
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: #eaeaea;
+  position: absolute;
+}
+
+.menu {
+  /*Toggle height to show (428px)*/
+  height: 428px;
+  width: 100%;
+  position: fixed;
+  /*Toggle Overflow to show items*/
+  overflow: hidden;
+  pointer-events: none;
+/*  box-shadow: 0 2px 4px rgba(0,0,0,0.2),0 -1px 0px rgba(0,0,0,0.02);*/
+  z-index: 5;
+}
+@media (min-width: 550px) {
+  .menu {
+    width: 333px;
+  }
+}
+
+.nav-box {
+  position: absolute;
+  margin-left: 0;
+  width: inherit;
+  height: 400px;
+  background-color: white;
+  /*Toggle when menu appears
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2),0 -1px 0px rgba(0,0,0,0.02);*/
+}
+
+.menu-button {
+  background-image: url(../images/menu.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45px;
+  width: 45px;
+  line-height: 75px;
+  margin-left: 20px;
+  margin-top: 12.5px;
+  position: absolute;
+  z-index: 10;
+}
+
+.menu-image {
+  height: 250px;
+  width: 100%;
+  background-image: url(../images/menu-image-default.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  position: absolute;
+  z-index: 5;
+}
+
+.menu-content {
+  background-color:white;
+  height: 128px;
+  margin-top: 250px;
+}
+
+.menu-info {
+  background-color: #eaeaea;
+  height: 50px;
+}
+
+.menu-list {
+  list-style: none;
+  padding-top: 30px;
+}
+
+
+.menu-link {
+  line-height: 45px;
+  list-style: none;
+  height: 45px;
+  margin-top: -10px;
+  padding-left: 20px;
+}
+.menu-link:hover {
+  background-color: #f4f4f4;
+}
+.menu-link a {
+  text-decoration: none;
+  color: nav;
+  font-weight: 500;
+  font-size: 24px;
+}
+.menu-link a:hover {
+  color: #1976d2;
+}
+
+.list-image {
+  height: 24px;
+  width: 24px;
+  margin-bottom: -3px;
+  margin-right: 5px;
+  background-image: url(../images/github-circle.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.menu-text {
+  text-decoration: none;
+  color: #222c33;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.menu-info span {
+  color: #222c33;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+
+.main {
+  height: 100%;
+  height: 800px;
+}
+
+.main-image {
+  position: absolute;
+  background-image: url(../images/personal-image.svg);
+  background-position: bottom left;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  max-width: 360px;
+  z-index: 0;
+}
+
+@media (min-width: 850px) {
+  .main-image {
+    width: 33%;
+    display: inline-block;
+    float: left;
+  } 
+}
+@media (min-width: 550px) {
+  .main-image {
+    background-size: 100%;
+  }
+}
+
+.main-bio {
+  position: absolute;
+  padding-right: 2.5%;
+  padding-left: 5%;
+  z-index: 1;
+  height: 100%;
+}
+@media (min-width: 850px) {
+  .main-bio {
+    position: relative;
+    width: 66%;
+    display: inline-block;
+    float: right; 
+    padding-left: 0;
+  }
+}
+@media (min-width: 550px) {
+  .main-bio {
+    margin-left: 0;
+    height: auto;
+    position: relative;
+    padding-left: 15%:
+  } 
+}
+@media (min-width: 1000px ) {
+  .main-bio {
+    padding-left: 5%;
+  }
+}
+
+
+.main-bio-intro {
+  padding-top: 150px;
+}
+@media (min-height: 550px) and (min-width: 550px) {
+  .main-bio-intro {
+    padding-top: 250px;
+  }
+}
+@media (min-height: 800px) and (min-width: 550px) {
+  .main-bio-intro {
+    padding-top: 350px;
+  }
+}
+
+.main-bio-desc {
+  font-weight: 400;
+  padding-right: 2.5%;
+  max-width: 650px;
+}
+
+.main-cover {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(234,234,234,.4)
+}
+
+.nav-container {
+  width: 333px;
+  height: 428px;
+  background-color: rgba(0,0,0,0);
+}
+
+.nav-faux-menu {
+  position: absolute;
+  width: 333px;
+  height: 75px;
+  background-color: gray;
+}
+
+.nav-button-main {
+  display: flex;
+  position: absolute;
+  /*To Change*/
+  margin-left: 7.5%; /*7.5%*/
+  margin-top: 17.5px; /*17.5px*/
+  height: 40px; /*40px*/
+  width: 40px; /*40px*/
+  border-radius: 40px; /*40px*/
+/*  box-shadow: 0 2px 4px rgba(0,0,0,0.2),0 -1px 0px rgba(0,0,0,0.02);*/
+  pointer-events: all;
+  
+  background-color: gray;
+  background-image: url(../images/menu.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+#nav:target {
+  /*Animation*/
+  background-color: white;
+  animation-name: circle-expansion;
+  animation-timing-function: cubic-bezier(.62,.28,.23,.99) 1.2s;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards; 
+}
+@keyframes circle-expansion {
+    from {
+      /*To Change*/
+      margin-left: 7.5%; /*7.5%*/
+      margin-top: 17.5px; /*17.5px*/
+      height: 40px; /*40px*/
+      width: 40px; /*40px*/
+      border-radius: 40px; /*40px*/
+      z-index: 5;
+    }
+    to {
+      /*To Change*/
+      margin-left: -150px; /*7.5%*/
+      margin-top: -150px; /*17.5px*/
+      height: 650px; /*40px*/
+      width: 650px; /*40px*/
+      border-radius: 650px; /*40px*/ 
+      z-index: 3;
+    }
+}
+
+.nav-button-close {
+  display: block;
+  position: absolute;
+  /*To Change*/
+  margin-left: 7.5%; /*7.5%*/
+  margin-top: 17.5px; /*17.5px*/
+  height: 38px; /*40px*/
+  width: 38px; /*40px*/
+  border-radius: 38px; /*40px*/
+/*  box-shadow: 0 2px 4px rgba(0,0,0,0.2),0 -1px 0px rgba(0,0,0,0.02);*/
+  z-index: 4;
+  background-image: url(../images/close-menu.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: all;
+}
+
+.hidden-tracker {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 0px;
+  height: 100%;
+  background-color: aquamarine;
+  position: fixed;
+  z-index: 10;
+}
