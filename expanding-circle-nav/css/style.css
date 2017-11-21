@@ -14,15 +14,14 @@
   pointer-events: none;
   z-index: 5;
 }
+
+
 /*For devices larger than a phone*/
+
 @media (min-width: 550px) {
   .menu {
     width: 333px;
   }
-}
-
-.main {
-  height: 100%;
 }
 
 .nav-container {
@@ -38,42 +37,52 @@
   z-index: 2;
 }
 
+`
 /*HTML Tag link trick that makes the nav open*/
 
-input[type=checkbox]:checked ~ .nav-main {
+input[type=checkbox]:checked~.nav-main {
   /*Animation*/
   background-color: white;
   animation-name: circle-expansion;
-  animation-timing-function: cubic-bezier(.62,.28,.23,.99) 1.2s;
+  animation-timing-function: cubic-bezier(.62, .28, .23, .99) 1.2s;
   animation-duration: 1.2s;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards;
 }
+
 @keyframes circle-expansion {
-    from {
-      margin-left: 0;
-      margin-top: 0;
-      height: 0px; /*40px*/
-      width: 0px; /*40px*/
-      border-radius: 0px; /*40px*/
-      z-index: 5;
-      background-image: none;
-    }
-    to {
-      margin-left: -150px;
-      margin-top: -150px;
-      height: 640px; /*40px*/
-      width: 640px; /*40px*/
-      border-radius: 640px; /*40px*/
-      z-index: 5;
-      background-image: none;
-    }
+  from {
+    margin-left: 0;
+    margin-top: 0;
+    height: 0px;
+    /*40px*/
+    width: 0px;
+    /*40px*/
+    border-radius: 0px;
+    /*40px*/
+    z-index: 5;
+    background-image: none;
+  }
+  to {
+    margin-left: -150px;
+    margin-top: -150px;
+    height: 640px;
+    /*40px*/
+    width: 640px;
+    /*40px*/
+    border-radius: 640px;
+    /*40px*/
+    z-index: 5;
+    background-image: none;
+  }
 }
-input[type=checkbox]:checked ~ .nav-main-container {
+
+input[type=checkbox]:checked~.nav-main-container {
   /*Animation*/
   animation-name: show-content;
   animation-duration: 1.3s;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards;
 }
+
 @keyframes show-content {
   0% {
     opacity: 0;
@@ -85,7 +94,8 @@ input[type=checkbox]:checked ~ .nav-main-container {
     opacity: 1;
   }
 }
-input[type=checkbox]:checked ~ .nav-button {
+
+input[type=checkbox]:checked~.nav-button {
   background-image: url(../images/close-menu.svg);
 }
 
@@ -95,14 +105,19 @@ input[type=checkbox]:checked ~ .nav-button {
   /*To Change*/
   margin-left: 7.5%;
   margin-top: 17.5px;
-  height: 38px; /*Slightly smaller size so you don't get a weird halo effect from being behind the nav-button*/
+  height: 38px;
+  /*Slightly smaller size so you don't get a weird halo effect from being behind the nav-button*/
   width: 38px;
   border-radius: 38px;
   z-index: 7;
   background-image: url(../images/menu.svg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   pointer-events: all;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, .1);
 }
 
 .nav-main {
@@ -110,7 +125,7 @@ input[type=checkbox]:checked ~ .nav-button {
   margin-top: 0;
   margin-left: 0;
   /*640 x 640*/
-  height: 0px; 
+  height: 0px;
   overflow: hidden;
   width: 0px;
   pointer-events: all;
@@ -120,6 +135,7 @@ input[type=checkbox]:checked ~ .nav-button {
   border: none;
   z-index: 2;
 }
+
 .menu-image {
   position: fixed;
   height: 200px;
@@ -132,33 +148,39 @@ input[type=checkbox]:checked ~ .nav-button {
   z-index: 5;
   overflow: hidden;
 }
+
 .menu-content {
   position: fixed;
   margin-top: 200px;
   height: 178px;
   width: 333px;
 }
+
 .menu-list {
   list-style: none;
   padding-top: 30px;
 }
+
 .menu-link {
   list-style: none;
   height: 45px;
   padding-top: -10px;
   padding-left: 20px;
-  
 }
+
 .menu-link:hover {
   background-color: #f4f4f4;
 }
+
 .menu-link a {
   font-weight: 500;
   font-size: 24px;
   line-height: 45px;
+  color: black;
   text-decoration: none !important;
   display: inline-block;
 }
+
 .list-image {
   height: 24px;
   width: 24px;
@@ -170,6 +192,7 @@ input[type=checkbox]:checked ~ .nav-button {
   background-repeat: no-repeat;
   display: inline-block;
 }
+
 .menu-info {
   position: fixed;
   background-color: #eaeaea;
@@ -178,6 +201,7 @@ input[type=checkbox]:checked ~ .nav-button {
   margin-top: 378px;
   margin-left: 0;
 }
+
 .menu-info span {
   color: #222c33;
   font-weight: 500;
@@ -191,8 +215,6 @@ input[type=checkbox] {
   pointer-events: all;
 }
 
-
-
 .nav-main-container {
   background-color: white;
   opacity: 0;
@@ -203,20 +225,4 @@ input[type=checkbox] {
   position: absolute;
 }
 
-.not-moving {
-  position: fixed;
-  top: 80px;
-  left: 0;
-}
 
-.not-moving-div {
-  display: block;
-  background-color: white;
-  opacity: .1;
-  width: inherit;
-  height: 428px;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 1;
-}

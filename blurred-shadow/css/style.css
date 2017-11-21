@@ -1,0 +1,69 @@
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+  position: absolute;
+}
+
+.box {
+  width: 330px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.album-cover {
+  position: absolute;
+  z-index: 5;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  -webkit-filter: none;
+  filter: none;
+  margin: 15px;
+}
+
+.album-cover-shadow {
+  position: absolute;
+  z-index: 0;
+  padding: 45px;
+  height: 240px;
+  width: 240px;
+  margin: 0 auto;
+}
+.album-cover:hover ~ .album-cover-shadow {
+  background: url(http://www.everythingnow.com/images/store.jpg);
+  background-size: cover;
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  box-shadow: inset 0 0 100px #ffffff;
+}
+
+
+.song-row {
+  margin-top: 315px;
+}
+
+.song-title {
+  text-align: center;
+  font-weight: 400;
+}
+
+.main {
+  margin-bottom: -35px;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.album-title {
+  margin-top: -5px;;
+  text-align: center;
+  font-weight: 400;
+  color: dimgrey;
+}
+
+.cover-image {
+  background-image: url(http://www.everythingnow.com/images/store.jpg);
+  background-size: cover;
+}
