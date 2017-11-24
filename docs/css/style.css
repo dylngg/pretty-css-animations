@@ -922,7 +922,7 @@ input[type=checkbox]:checked~.nav-main-faux-container {
   background-image: url(../images/blurred-shadow-purple.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
 }
 
 .feature-outer-link {
