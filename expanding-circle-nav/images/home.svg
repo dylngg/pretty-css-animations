@@ -1,1 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 125 167" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="Home-Picture" serif:id="Home Picture" transform="matrix(3.08642,0,0,3.08642,-19096.3,-1627.5)">
+        <path d="M6189.46,581.309L6189.46,542.356C6189.46,540.668 6190.04,539.238 6191.21,538.067C6192.39,536.895 6193.82,536.309 6195.5,536.309L6219.41,527.309L6219.41,536.309C6221.1,536.309 6222.53,536.895 6223.7,538.067C6224.87,539.238 6225.46,540.668 6225.46,542.356L6225.46,581.309L6207.46,581.309L6207.46,566.262L6195.5,566.262L6195.5,581.309L6189.46,581.309ZM6213.5,575.262L6219.41,575.262L6219.41,566.262L6213.5,566.262L6213.5,575.262ZM6195.5,557.262L6201.41,557.262L6201.41,545.309L6195.5,545.309L6195.5,557.262ZM6207.46,557.262L6219.41,557.262L6219.41,545.309L6207.46,545.309L6207.46,557.262Z" style="fill:white;fill-rule:nonzero;"/>
+    </g>
+</svg>
